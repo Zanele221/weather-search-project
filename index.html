@@ -7,23 +7,26 @@
     <link rel="stylesheet" href="./style.css">
  </head>
  <body>
-    <div class="weathewr-app">
+    <div class="weather-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city">
-            <input type="submit" value="search">
+        <form class="search-form" >
+            <input type="search" placeholder="Enter a city" required class="search-form-input">
+            <input type="submit" value="search" class="search-form-button">
         </form>
         </header>
         <main>
+        <div class="weather-app-data">
         <div>
-            <h1>East London</h1>
-            <p>Thursday 23:17, clear
+            <h1 class="weather-app-city">East London</h1>
+            <p class="weather-app-details">Thursday 23:17, clear
             <br>
             Humidity:39% Wind:18km/h
             </p>
        </div>
-        <div>🌤️ 12°C</div>
+        <div class="weather-app-temperature">🌤️ 12°C</div>
+        </div>
     </main>
+    
 
     <footer>
      <p>Coded by
