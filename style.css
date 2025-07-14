@@ -1,5 +1,6 @@
  body{ 
     background-color: lightgrey;
+    color: white;
  }
 
  .weather-app{
@@ -30,7 +31,8 @@
 }
 
 .weather-app-temperature {
-  font-size: 88px;
+  
+  font-size: 50px;
   margin-left: 10px;
   font-weight: bold;
 }
@@ -66,3 +68,8 @@ footer {
   font-size: 15px;
   color: black;
 }
+
+    .weather-app-temperature-container{
+      display: flex;
+      align-items: center;
+    }
