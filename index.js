@@ -40,10 +40,9 @@ function formatDate(date) {
 }
 
 function searchCity(city) {
-  let apiKey = "f78406b16o38b94e34f7t24f5be5e8a9"; // Ensure this API key is valid from SheCodes
+  let apiKey = "f78406b16o38b94e34f7t24f5be5e8a9";
   let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}`;
   axios.get(apiUrl).then(refreshWeather).catch(function (error) {
-    // Handle errors, e.g., city not found
     alert("Could not find weather for that city. Please try again.");
     console.error("Error fetching weather data:", error);
   });
@@ -52,7 +51,7 @@ function searchCity(city) {
 function handleSearchSubmit(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#search-form-input");
-  // Check if the input is not empty before searching
+
   if (searchInput.value) {
     searchCity(searchInput.value);
   } else {
@@ -62,3 +61,6 @@ function handleSearchSubmit(event) {
 
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+
+searchCity("Cape Town");
